@@ -6,10 +6,13 @@ public class sphereMovement : MonoBehaviour
 {
     public float speed;
     public Vector3 direction;
+
+    public Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = gameObject.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
